@@ -16,17 +16,17 @@ export default function ContactPage() {
       <h2>Support</h2>
       <p>
         For shift, payment, or account issues:{" "}
-        <a href="mailto:support@boostaff.io">support@boostaff.io</a>
+        <a href="mailto:support@booststaff.io">support@booststaff.io</a>
       </p>
       <h2>Sales</h2>
       <p>
         Staffing a venue, hotel, or event?{" "}
-        <a href="mailto:sales@boostaff.io">sales@boostaff.io</a>
+        <a href="mailto:sales@booststaff.io">sales@booststaff.io</a>
       </p>
       <h2>Press</h2>
       <p>
         For media inquiries:{" "}
-        <a href="mailto:press@boostaff.io">press@boostaff.io</a>
+        <a href="mailto:press@booststaff.io">press@booststaff.io</a>
       </p>
       {/* TODO: Confirm support phone number with Operations before launch. */}
       <h2>Phone</h2>

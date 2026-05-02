@@ -19,7 +19,7 @@ export default function PrivacyPage() {
       <h2>How to reach us</h2>
       <p>
         Questions about your data? Email{" "}
-        <a href="mailto:privacy@boostaff.io">privacy@boostaff.io</a>.
+        <a href="mailto:privacy@booststaff.io">privacy@booststaff.io</a>.
       </p>
     </>
   );

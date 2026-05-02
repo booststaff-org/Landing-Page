@@ -22,7 +22,7 @@ export default function CareersPage() {
         across Michigan, send us a note.
       </p>
       <p>
-        <a href="mailto:careers@boostaff.io">careers@boostaff.io</a>
+        <a href="mailto:careers@booststaff.io">careers@booststaff.io</a>
       </p>
     </>
   );

@@ -3,7 +3,7 @@ import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
-const SITE_URL = "https://boostaff.io";
+const SITE_URL = "https://booststaff.io";
 
 const inter = Inter({
   subsets: ["latin"],
