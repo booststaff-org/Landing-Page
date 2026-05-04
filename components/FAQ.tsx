@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 type QA = { q: string; a: string };
 
 const faqs: QA[] = [
@@ -24,10 +28,12 @@ const faqs: QA[] = [
 ];
 
 export default function FAQ() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   return (
     <section id="faq" className="py-14 px-6 max-w-3xl mx-auto scroll-mt-24">
-      <div className="rounded-2xl border border-outline-variant/30 bg-white">
-        <div className="px-5 py-4">
+      <div className="rounded-2xl border border-outline-variant/30 bg-white overflow-hidden">
+        <div className="px-5 py-4 border-b border-outline-variant/20">
           <p className="text-xs font-bold uppercase tracking-wider text-secondary-container mb-0.5">
             Questions
           </p>
@@ -36,23 +42,34 @@ export default function FAQ() {
           </h2>
         </div>
 
-        <div className="divide-y divide-outline-variant/20 border-t border-outline-variant/20">
-          {faqs.map(({ q, a }) => (
-            <details key={q} className="group/item">
-              <summary className="flex cursor-pointer items-center justify-between gap-3 px-5 py-3 text-sm font-semibold text-on-background list-none">
-                <span>{q}</span>
-                <span
-                  aria-hidden
-                  className="text-primary-container text-lg leading-none transition-transform group-open/item:rotate-45 shrink-0"
+        <div className="divide-y divide-outline-variant/20">
+          {faqs.map(({ q, a }, i) => {
+            const isOpen = openIndex === i;
+            return (
+              <div key={q}>
+                <button
+                  type="button"
+                  onClick={() => setOpenIndex(isOpen ? null : i)}
+                  className="w-full flex items-center justify-between gap-3 px-5 py-3.5 text-left text-sm font-semibold text-on-background hover:bg-surface-container-low transition-colors"
+                  aria-expanded={isOpen}
                 >
-                  +
-                </span>
-              </summary>
-              <p className="px-5 pb-3 text-sm text-on-surface-variant leading-relaxed -mt-1">
-                {a}
-              </p>
-            </details>
-          ))}
+                  <span>{q}</span>
+                  <span
+                    aria-hidden
+                    className="text-primary-container text-lg leading-none shrink-0 transition-transform duration-200"
+                    style={{ transform: isOpen ? "rotate(45deg)" : "rotate(0deg)" }}
+                  >
+                    +
+                  </span>
+                </button>
+                {isOpen && (
+                  <p className="px-5 pb-4 text-sm text-on-surface-variant leading-relaxed">
+                    {a}
+                  </p>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
