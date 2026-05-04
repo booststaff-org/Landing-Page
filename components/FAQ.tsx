@@ -25,13 +25,13 @@ const faqs: QA[] = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="py-20 px-6 max-w-3xl mx-auto scroll-mt-24">
+    <section id="faq" className="py-14 px-6 max-w-3xl mx-auto scroll-mt-24">
       <div className="rounded-2xl border border-outline-variant/30 bg-white">
-        <div className="px-6 py-5">
-          <p className="text-xs font-bold uppercase tracking-wider text-secondary-container mb-1">
+        <div className="px-5 py-4">
+          <p className="text-xs font-bold uppercase tracking-wider text-secondary-container mb-0.5">
             Questions
           </p>
-          <h2 className="text-2xl md:text-3xl font-extrabold text-primary-container tracking-tight">
+          <h2 className="text-xl md:text-2xl font-extrabold text-primary-container tracking-tight">
             Frequently asked.
           </h2>
         </div>
@@ -39,16 +39,16 @@ export default function FAQ() {
         <div className="divide-y divide-outline-variant/20 border-t border-outline-variant/20">
           {faqs.map(({ q, a }) => (
             <details key={q} className="group/item">
-              <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-4 font-semibold text-on-background list-none">
+              <summary className="flex cursor-pointer items-center justify-between gap-3 px-5 py-3 text-sm font-semibold text-on-background list-none">
                 <span>{q}</span>
                 <span
                   aria-hidden
-                  className="text-primary-container text-xl leading-none transition-transform group-open/item:rotate-45 shrink-0"
+                  className="text-primary-container text-lg leading-none transition-transform group-open/item:rotate-45 shrink-0"
                 >
                   +
                 </span>
               </summary>
-              <p className="px-6 pb-5 text-on-surface-variant leading-relaxed -mt-1">
+              <p className="px-5 pb-3 text-sm text-on-surface-variant leading-relaxed -mt-1">
                 {a}
               </p>
             </details>
