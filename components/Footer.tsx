@@ -12,7 +12,7 @@ const legalLinks = [
 
 const socials = [
   { href: "https://www.facebook.com/share/1BU4Lpa46a/", label: "Facebook", Icon: FacebookIcon },
-  { href: "https://www.instagram.com/booststaff", label: "Instagram", Icon: InstagramIcon },
+  { href: "https://www.instagram.com/booststaff?igsh=MXczMWx3aDl0bXhxaQ==", label: "Instagram", Icon: InstagramIcon },
   { href: "https://www.linkedin.com/company/booststaff/", label: "LinkedIn", Icon: LinkedInIcon },
   { href: "https://www.tiktok.com/@boost.staff?_r=1&_t=ZP-965oY4VMREF", label: "TikTok", Icon: TikTokIcon },
 ];
