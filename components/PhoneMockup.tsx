@@ -1,3 +1,5 @@
+import { BoostStaffMark } from "./icons/SocialIcons";
+
 type Shift = {
   initials: string;
   title: string;
@@ -79,25 +81,22 @@ export default function PhoneMockup() {
             aspectRatio: "9/19",
           }}
         >
-          {/* Notch */}
-          <div className="relative flex justify-center pt-3 pb-0">
-            <div
-              style={{
-                width: 80,
-                height: 20,
-                background: "#0b1220",
-                borderRadius: 12,
-              }}
-            />
-          </div>
-
-          {/* Status bar */}
+          {/* Status bar + Dynamic Island */}
           <div
-            className="flex justify-between items-center px-5 pt-1 pb-1"
-            style={{ fontSize: 10, fontWeight: 700, color: text }}
+            className="grid items-center px-4 pt-3 pb-1"
+            style={{ gridTemplateColumns: "1fr auto 1fr", fontSize: 10, fontWeight: 700, color: text }}
           >
             <span>9:41</span>
-            <div className="flex items-center gap-1">
+            {/* Dynamic Island */}
+            <div
+              style={{
+                width: 72,
+                height: 22,
+                background: "#0b1220",
+                borderRadius: 20,
+              }}
+            />
+            <div className="flex items-center justify-end gap-1">
               {/* Signal */}
               <svg width="12" height="9" viewBox="0 0 16 11" fill={text}>
                 <rect x="0" y="6" width="3" height="5" rx="0.5" />
@@ -122,7 +121,8 @@ export default function PhoneMockup() {
 
           {/* App header */}
           <div className="flex justify-between items-center px-4 pt-1 pb-1">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5">
+              <BoostStaffMark className="w-7 h-7 flex-shrink-0" />
               <div
                 className="flex flex-col leading-none"
                 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800 }}
