@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/boost-staff-logo.png";
-import { LinkedInIcon, InstagramIcon, XIcon } from "./icons/SocialIcons";
+import { LinkedInIcon, InstagramIcon, FacebookIcon, TikTokIcon } from "./icons/SocialIcons";
 
 const legalLinks = [
   { href: "/privacy", label: "Privacy Policy" },
@@ -11,9 +11,10 @@ const legalLinks = [
 ];
 
 const socials = [
-  { href: "https://www.linkedin.com/company/boost-staff", label: "LinkedIn", Icon: LinkedInIcon },
+  { href: "https://www.facebook.com/share/1BU4Lpa46a/", label: "Facebook", Icon: FacebookIcon },
   { href: "https://www.instagram.com/booststaff", label: "Instagram", Icon: InstagramIcon },
-  { href: "https://x.com/booststaff", label: "X (Twitter)", Icon: XIcon },
+  { href: "https://www.linkedin.com/company/booststaff/", label: "LinkedIn", Icon: LinkedInIcon },
+  { href: "https://www.tiktok.com/@boost.staff?_r=1&_t=ZP-965oY4VMREF", label: "TikTok", Icon: TikTokIcon },
 ];
 
 export default function Footer() {
@@ -22,7 +23,9 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 gap-8 max-w-7xl mx-auto">
         <div className="text-center md:text-left">
           <div className="flex items-center justify-center md:justify-start mb-2">
-            <Image src={logo} alt="Boost Staff" className="h-16 w-auto" />
+            <Link href="/" aria-label="Boost Staff home">
+              <Image src={logo} alt="Boost Staff" className="h-16 w-auto hover:opacity-80 transition-opacity" />
+            </Link>
           </div>
           {/* TODO: Confirm registered legal entity name and verify support
               phone number with Operations before launch. */}
