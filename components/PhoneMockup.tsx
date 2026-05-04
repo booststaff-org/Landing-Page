@@ -120,16 +120,9 @@ export default function PhoneMockup() {
 
           {/* App header */}
           <div className="flex justify-between items-center px-4 pt-1 pb-1">
-            <div className="flex items-center gap-1.5">
+            <div className="flex items-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/boost-staff-logo.png" alt="Boost Staff" style={{ width: 28, height: 28, objectFit: "contain" }} />
-              <div
-                className="flex flex-col leading-none"
-                style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800 }}
-              >
-                <span style={{ fontSize: 11, color: orange }}>BOOST</span>
-                <span style={{ fontSize: 11, color: navy }}>STAFF</span>
-              </div>
+              <img src="/boost-staff-icon.png" alt="Boost Staff" style={{ height: 36, width: "auto", objectFit: "contain" }} />
             </div>
             {/* Bell */}
             <div
