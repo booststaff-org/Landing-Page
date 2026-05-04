@@ -1,4 +1,3 @@
-import { BoostStaffMark } from "./icons/SocialIcons";
 
 type Shift = {
   initials: string;
@@ -122,7 +121,8 @@ export default function PhoneMockup() {
           {/* App header */}
           <div className="flex justify-between items-center px-4 pt-1 pb-1">
             <div className="flex items-center gap-1.5">
-              <BoostStaffMark className="w-7 h-7 flex-shrink-0" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/boost-staff-logo.png" alt="Boost Staff" style={{ width: 28, height: 28, objectFit: "contain" }} />
               <div
                 className="flex flex-col leading-none"
                 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800 }}
