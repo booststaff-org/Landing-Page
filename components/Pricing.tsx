@@ -32,8 +32,8 @@ const tiers: Tier[] = [
   {
     audience: "For Employers",
     name: "Pay-as-you-staff",
-    price: "15%",
-    priceSuffix: "platform fee on hours worked",
+    price: "",
+    priceSuffix: "",
     blurb:
       "No subscriptions, no minimums. You pay only for shifts that actually happen.",
     bullets: [
