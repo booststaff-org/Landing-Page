@@ -53,3 +53,14 @@ jobs:
           aws cloudfront create-invalidation \
             --distribution-id $CLOUDFRONT_DISTRIBUTION_ID \
             --paths "/*"
+
+      - name: Sync EC2 from S3 via SSM
+        env:
+          INSTANCE_ID: ${{ secrets.LANDING_EC2_INSTANCE_ID }}
+        run: |
+          aws ssm send-command \
+            --instance-ids "$INSTANCE_ID" \
+            --document-name "AWS-RunShellScript" \
+            --parameters 'commands=["aws s3 sync s3://booststaff-dev-landing /usr/share/nginx/html --delete --region us-east-2 && nginx -s reload"]' \
+            --region us-east-2 \
+            --output text

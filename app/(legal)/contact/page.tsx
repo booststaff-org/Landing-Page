@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact Us — Boost Staff",
-  description: "Reach the Boost Staff team for support, sales, or press.",
+  description: "Reach the Boost Staff team for support or sales.",
 };
 
 export default function ContactPage() {
@@ -23,12 +23,6 @@ export default function ContactPage() {
         Staffing a venue, hotel, or event?{" "}
         <a href="mailto:sales@booststaff.io">sales@booststaff.io</a>
       </p>
-      <h2>Press</h2>
-      <p>
-        For media inquiries:{" "}
-        <a href="mailto:press@booststaff.io">press@booststaff.io</a>
-      </p>
-      {/* TODO: Confirm support phone number with Operations before launch. */}
       <h2>Phone</h2>
       <p>
         <a href="tel:+17343597116">(734) 359-7116</a>
