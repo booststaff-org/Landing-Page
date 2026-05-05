@@ -19,8 +19,14 @@ export default function PrivacyPage() {
       <h2>How to reach us</h2>
       <p>
         Questions about your data? Email{" "}
-        <a href="mailto:privacy@booststaff.io">privacy@booststaff.io</a>.
+        <a href="mailto:privacy@booststaff.io">privacy@booststaff.io</a> or
+        write to us at:
       </p>
+      <address>
+        Boost Staff Inc.<br />
+        19120 Grand River Ave<br />
+        Detroit, MI 48223
+      </address>
     </>
   );
 }

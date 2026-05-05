@@ -27,6 +27,12 @@ export default function ContactPage() {
       <p>
         <a href="tel:+17343597116">(734) 359-7116</a>
       </p>
+      <h2>Mailing Address</h2>
+      <address>
+        Boost Staff Inc.<br />
+        19120 Grand River Ave<br />
+        Detroit, MI 48223
+      </address>
     </>
   );
 }

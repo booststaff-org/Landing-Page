@@ -166,7 +166,8 @@ export default function TermsPage() {
 
       <p className="mt-10 text-sm text-gray-500">
         Questions? Email{" "}
-        <a href="mailto:legal@booststaff.io">legal@booststaff.io</a>.
+        <a href="mailto:legal@booststaff.io">legal@booststaff.io</a> or write
+        to Boost Staff Inc., 19120 Grand River Ave, Detroit, MI 48223.
       </p>
     </>
   );
