@@ -10,8 +10,8 @@ export default function ContactPage() {
     <>
       <h1>Contact us</h1>
       <p>
-        We&rsquo;re a small team. Pick the right address and we&rsquo;ll get
-        back to you within one business day.
+        Have a question or need help? Reach us through any of the channels
+        below.
       </p>
       <h2>Support</h2>
       <p>
